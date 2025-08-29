@@ -1,4 +1,15 @@
 @media (max-width: 992px) {
+  .navbarMenu {
+    display: none;
+  }
+  .navAroBtn {
+    display: inline-block;
+  }
+
+  .sobCourse {
+    display: none;
+  }
+
   .hero-section {
     padding: 20px 10px;
     display: flex;
@@ -24,10 +35,6 @@
       display: none;
     }
 
-    .headerMenu {
-      display: block;
-    }
-
     .header-right {
       margin-top: 10px;
     }
@@ -49,6 +56,28 @@
     }
   }
 
+  .cvCodemama {
+    flex-direction: column;
+  }
+
+  .cvCodemama div {
+    width: 100%;
+  }
+
+  .LiveClassFeature {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .ratingParent {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .parentReview {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .footerDiv-banner {
     flex-direction: column !important;
     gap: 20px;
@@ -60,12 +89,48 @@
     height: 100%;
   }
 
-  .parentReview {
-    grid-template-columns: 1fr 1fr;
+  .footerDiv-info-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
   }
 }
 
+/* only for navbar */
+@media (max-width: 800px) {
+  .languageBtn,
+  .navAroBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navSearch-text {
+    display: none;
+  }
+}
+
+/* samll device */
+
 @media (max-width: 560px) {
+  .navSearch-text {
+    display: none;
+  }
+
+  .languageBtn {
+    display: none;
+  }
+  .loginSmallBtn {
+    display: inline-block;
+  }
+  .loginBtn {
+    display: none;
+  }
+  .headerMenu {
+    display: inline-block;
+  }
+  /*------------- nav bar end ---------*/
+
   .hero-section h2 {
     font-size: 50px;
   }
@@ -79,7 +144,40 @@
     flex-basis: 100%;
   }
 
+  .cvCodemama-CV,
+  .cvCodemama-CM {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .LiveClassFeature {
+    grid-template-columns: 1fr;
+  }
+
+  .ratingParent {
+    grid-template-columns: 1fr;
+  }
+
   .parentReview {
     grid-template-columns: 1fr;
+  }
+
+  .footerDiv-banner-txt {
+    padding: 0px 30px;
+    padding-bottom: 20px;
+  }
+  .footerDiv-banner-txt-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerDiv-banner-txt-btn button {
+    width: 100%;
+  }
+
+  .footerDiv-info-container {
+    position: relative;
+    text-align: center;
   }
 }

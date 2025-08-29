@@ -20,6 +20,7 @@ body {
 
 .header-left {
   display: flex;
+  justify-content: left;
   align-items: center;
   gap: 0 40px;
 }
@@ -59,7 +60,7 @@ body {
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   gap: 0 30px;
 }
@@ -112,6 +113,10 @@ ul li:hover {
   gap: 0 20px;
 }
 
+.loginSmallBtn {
+  display: none;
+}
+
 .header-right button {
   font-size: 14px;
   font-weight: 600;
@@ -142,6 +147,13 @@ ul li:hover {
   background-color: #eaecf0;
 }
 
+.navAroBtn {
+  display: none;
+}
+.navAroBtn:hover {
+  background-color: #eaecf0;
+}
+
 .sobCourse {
   background-color: #eaecf0;
 }
@@ -152,6 +164,14 @@ ul li:hover {
 
 .loginBtn:hover {
   background-color: #ffc000;
+}
+
+.headerMenu {
+  font-size: 30px;
+  cursor: pointer;
+}
+.headerMenu:hover {
+  transform: scale(1.4);
 }
 
 /* MOCKU-Inerview Coach Start */
@@ -606,6 +626,7 @@ ul li:hover {
 .ratingParent {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .ratingChild1,
@@ -664,9 +685,6 @@ ul li:hover {
   width: 90%;
   margin: 0 auto;
   box-shadow: 0 4px 16px rgba(24, 24, 24, 0.08);
-}
-
-@media (max-width: 992px) {
 }
 
 .footerDiv-banner-txt-heading h4 {

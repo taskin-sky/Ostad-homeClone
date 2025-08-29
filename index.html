@@ -26,17 +26,33 @@
               src="https://cdn.ostad.app/public/upload/2024-03-10T04-41-51.748Z-ostad-search.svg"
               alt="Search"
             />
-            <p class="">কোর্স সার্চ করুন</p>
+            <p class="navSearch-text">কোর্স সার্চ করুন</p>
           </button>
 
-          <ul>
+          <ul class="navbarMenu">
             <li class="specilaOffer"><a href="">স্পেশাল অফার</a></li>
             <li><a href="">কোড মামা</a></li>
             <li><a href="">ফ্রি কোর্সেস</a></li>
             <li><a href="">ব্লগ</a></li>
           </ul>
 
-          <span class="headerMenu">Menu</span>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle navAroBtn"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              আরো
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">স্পেশাল অফার</a>
+              <a class="dropdown-item" href="#">কোড মামা</a>
+              <a class="dropdown-item" href="#">ফ্রি কোর্সেস</a>
+            </div>
+          </div>
         </div>
 
         <div class="header-right">
@@ -45,7 +61,9 @@
             <p class="languageText">EN</p>
           </button>
           <button class="sobCourse">সব কোর্স</button>
+          <button class="ostadBtn loginSmallBtn">লগিন</button>
           <button class="loginBtn ostadBtn">লগিন/সাইন আপ</button>
+          <span class="headerMenu">𓃑</span>
         </div>
       </div>
     </nav>
