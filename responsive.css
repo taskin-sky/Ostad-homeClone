@@ -24,8 +24,8 @@
       display: none;
     }
 
-    .header span {
-      display: inline-block;
+    .headerMenu {
+      display: block;
     }
 
     .header-right {
@@ -49,18 +49,37 @@
     }
   }
 
-  @media (max-width: 560px) {
-    .hero-section h2 {
-      font-size: 50px;
-    }
-    .hero-section {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .category {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .course-card {
-      flex-basis: 100%;
-    }
+  .footerDiv-banner {
+    flex-direction: column !important;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footerDiv-banner-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .parentReview {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-section h2 {
+    font-size: 50px;
+  }
+  .hero-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .category {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course-card {
+    flex-basis: 100%;
+  }
+
+  .parentReview {
+    grid-template-columns: 1fr;
   }
 }
