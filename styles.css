@@ -522,7 +522,8 @@ ul li:hover {
 
 .cvCodemama div {
   width: 50%;
-  margin: 10px;
+  padding: 2px;
+  margin: 10px 0px;
   background-color: #1d2939;
   color: white;
   border-radius: 5px;

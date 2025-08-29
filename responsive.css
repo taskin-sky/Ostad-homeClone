@@ -148,7 +148,12 @@
   .cvCodemama-CM {
     flex-direction: column;
     padding-bottom: 30px;
+    width: 90%;
   }
+
+  /* .cvCodemama-CV img,
+  .cvCodemama-CM img {
+  } */
 
   .LiveClassFeature {
     grid-template-columns: 1fr;
