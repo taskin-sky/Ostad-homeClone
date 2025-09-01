@@ -224,4 +224,8 @@
   .navlogoImg {
     display: none;
   }
+
+  .hero-section-text {
+    letter-spacing: -1px;
+  }
 }
