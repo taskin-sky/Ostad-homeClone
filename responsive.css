@@ -113,8 +113,22 @@
 /* samll device */
 
 @media (max-width: 560px) {
+  .navbarMenuModel {
+    display: inline-block;
+    gap: 30px;
+  }
+  .navbarMenuModelDIV {
+    display: flex;
+    flex-direction: column;
+  }
+
   .navSearch-text {
     display: none;
+  }
+
+  .ostadBtn {
+    width: 90%;
+    height: 100%;
   }
 
   .languageBtn {
@@ -128,6 +142,12 @@
   }
   .headerMenu {
     display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+
+  .hero-section-text h2 {
+    font-size: 26px !important;
   }
   /*------------- nav bar end ---------*/
 
@@ -184,5 +204,18 @@
   .footerDiv-info-container {
     position: relative;
     text-align: center;
+  }
+}
+
+@media (max-width: 521px) {
+  .header-left {
+    gap: 5px;
+  }
+  .navlogoImgSml {
+    display: inline-block;
+    width: 33px;
+  }
+  .navlogoImg {
+    display: none;
   }
 }

@@ -25,11 +25,12 @@ body {
   gap: 0 40px;
 }
 
-.headerMenu {
+.headerMenu,
+.navlogoImgSml {
   display: none;
 }
 
-.logo img {
+.navlogoImg {
   width: 120px;
 }
 
@@ -115,6 +116,14 @@ ul li:hover {
 
 .loginSmallBtn {
   display: none;
+}
+
+.login-Signup-modal-text {
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  position: relative;
+  text-align: center;
 }
 
 .header-right button {
@@ -899,5 +908,10 @@ ul li:hover {
   border: rgba(0, 0, 0, 0.616) 1px solid;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(24, 24, 24, 0.1);
+}
+
+.text-small {
+  font-size: 8px;
+  color: white;
 }
 /* CUSTOM END */

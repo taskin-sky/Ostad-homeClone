@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Bootstrap/bootstrap.css" />
-    <link rel="icon" href="./images/logo/logoSmall.png" type="image/x-icon" />
+    <link rel="icon" href="./images/logo/logoSml.png" type="image/x-icon" />
 
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./responsive.css" />
@@ -18,7 +18,14 @@
       <div class="container-xxl NavContainer">
         <div class="header-left">
           <a href="index.html" class="logo"
-            ><img src="./images/logo/logo.png" alt="logo"
+            ><img class="navlogoImg" src="./images/logo/logo.png" alt="logo"
+          /></a>
+
+          <a href="index.html" class="logo"
+            ><img
+              class="navlogoImgSml"
+              src="./images/logo/logoSml.png"
+              alt="logo"
           /></a>
 
           <button class="search-btn">
@@ -61,9 +68,251 @@
             <p class="languageText">EN</p>
           </button>
           <button class="sobCourse">সব কোর্স</button>
-          <button class="ostadBtn loginSmallBtn">লগিন</button>
-          <button class="loginBtn ostadBtn">লগিন/সাইন আপ</button>
-          <span class="headerMenu">𓃑</span>
+          <button class="ostadBtn loginSmallBtn">
+            <span class="modal-triggerLogin" style="cursor: pointer"> লগিন </span>
+          </button>
+          <div
+            class="modal fade"
+            id="scrollableModalLogin"
+            tabindex="-1"
+            aria-labelledby="scrollableModalLoginLabel"
+            aria-hidden="true"
+          >
+          <!-- login -->
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="scrollableModalLoginLabel">লগিন</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body navbarMenuModelDIV">
+
+                  <form>
+                    <div class="mb-3">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check text-secondary">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember Password</label>
+                    </div>
+                    <button type="submit" class="btn ostadBtn">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="loginBtn ostadBtn"> 
+            <span class="modal-triggerLoginSignup" style="cursor: pointer"> লগিন/সাইন আপ </span>
+          </button>
+
+          <div class="d-grid col-6 col-6  loginsignupModalDiv">
+          
+            <div
+              class="modal fade"
+              id="scrollableModalLoginSignup"
+              tabindex="-1"
+              aria-labelledby="scrollableModalLoginSignupLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="scrollableModalLoginSignupLabel"><div class="login-Signup-modal-text"><span>লগিন</span> <span>সাইন আপ</span></div></h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+
+                    <div class="row">
+                      <div class="col-5">
+                        <form>
+                          <div class="mb-3">
+                            <div class="mb-3">
+                              <label for="exampleFormControlInput1" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="name@example.com"
+                              />
+                            </div>
+                            <div id="emailHelp" class="form-text text-small">
+                              We'll never share your email with anyone else.
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="exampleInputPassword1"
+                            />
+                          </div>
+                          <div class="mb-3 form-check text-secondary">
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Remember Password</label
+                            >
+                          </div>
+                          <button type="submit" class="btn ostadBtn">Sign</button>
+                        </form>
+                      </div>
+
+                      <!-- signup -->
+                      <div class="col-7">
+                        <form>
+                          <div class="row">
+                            <div class="col-12">
+                              <form class="row g-3">
+                                <div class="row g-3">
+                                  <div class="col">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="First name"
+                                      aria-label="First name"
+                                    />
+                                  </div>
+                                  <div class="col">
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      placeholder="Last name"
+                                      aria-label="Last name"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label"
+                                      >Email address</label
+                                    >
+                                    <input
+                                      type="email"
+                                      class="form-control"
+                                      id="exampleFormControlInput1"
+                                      placeholder="name@example.com"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4" />
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="inputPassword4" class="form-label">Confirem Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4" />
+                                </div>
+
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputAddress"
+                                    placeholder="1234 Main St"
+                                  />
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor"
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity" />
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+
+                                <div class="col-12">
+                                  <button type="submit" class="btn ostadBtn">Sign-up</button>
+                                </div>
+                                
+                              </form>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal Trigger --></div>
+          <span class="modal-trigger headerMenu" style="cursor: pointer"> 𓃑 </span>
+
+          <!-- Scrollable Modal -->
+          <div
+            class="modal fade"
+            id="scrollableModal"
+            tabindex="-1"
+            aria-labelledby="scrollableModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="scrollableModalLabel">Menu</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body navbarMenuModelDIV">
+                  <ul class="navbarMenu navbarMenuModel">
+                    <li class="specilaOffer"><a href="">স্পেশাল অফার</a></li>
+                    <li><a href="">কোড মামা</a></li>
+                    <li><a href="">ফ্রি কোর্সেস</a></li>
+                    <li><a href="">ব্লগ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </nav>
@@ -807,5 +1056,38 @@
     <!-- footerContainer END-->
 
     <script src="./Bootstrap/bootstrap.min.js"></script>
+    <script>
+            document
+              .querySelector('.modal-trigger')
+              .addEventListener('click', function () {
+                var modal = new bootstrap.Modal(
+                  document.getElementById('scrollableModal')
+                );
+                modal.show();
+              });
+    </script>
+    
+    <script>
+            document
+              .querySelector('.modal-triggerLogin')
+              .addEventListener('click', function () {
+                var modal = new bootstrap.Modal(
+                  document.getElementById('scrollableModalLogin')
+                );
+                modal.show();
+              });
+      </script>
+
+      <script>
+            document
+              .querySelector('.modal-triggerLoginSignup')
+              .addEventListener('click', function () {
+                var modal = new bootstrap.Modal(
+                  document.getElementById('scrollableModalLoginSignup')
+                );
+                modal.show();
+              });
+      </script>
+      
   </body>
 </html>
