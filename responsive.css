@@ -149,6 +149,12 @@
   .hero-section-text h2 {
     font-size: 26px !important;
   }
+  .spinner-grow {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+  }
   /*------------- nav bar end ---------*/
 
   .hero-section h2 {
